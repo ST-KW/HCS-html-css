@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kontakt zu Kafka.</title>
+    <!--https://www.bootstrapcdn.com/-->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  </head>
+  <body>
+    <!-- Contact form with URL encrypted submit of subject and message field. -->
+      <form action="success.html">
+        <h1>Kontaktieren Sie Herrn Kafka</h1>
+        <div>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div><br>
+        <div>
+            Geschlecht:<br><br>
+            <label><input type="radio" name="gender">Männlich</label> <!-- new style-->
+            <label><input type="radio" name="gender">Weiblich</label> <!-- new style-->
+            <input type="radio" name="gender" id="divers-radio"><label for="divers-radio">Divers</label> <!-- old style (for atribute)-->
+        </div><br>
+        <div>
+            Kategorie:<br><br>
+            <label><input type="checkbox" name="complaint">Beschwerde</label> <!-- new style-->
+            <label><input type="checkbox" name="info">Information</label> <!-- new style-->
+            <input type="checkbox" name="judgment" id="radio-judgment"><label for="radio-judgment">Bescheid</label> <!-- old style (for atribute)-->
+        </div><br>
+        <div>
+            Priorität:<br><br>
+            <select name="priority" aria-label="Priorität wählen"> <!--With aria label for handicapped users-->
+                <option value="high">Hoch</option>
+                <option value="medium">Mittel</option>
+                <option value="low">Niedrig</option>
+                <option value="random" selected>Zufall</option>
+            </select>             
+        </div><br>
+        <div>Betreff:<br><input type="Subject" name="Subject"></div><br>
+        <div>Nachricht:<br><textarea name="body" cols="20" rows="5" wrap="virtual" maxlength="60" placeholder="Maximal 60 Zeichen Text hier eingeben."></textarea></div>   
+        <input type="submit" name="submit">
+    </form>
+  </body>
+</html>
