@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt zu Kafka.</title>
+  <!--https://www.bootstrapcdn.com/-->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+
+<body>
+  <header>
+    <h1>Kontaktieren Sie Herrn Kafka</h1>
+    <div>Jemand musste Josef K. verleumdet haben. Ich habe dazu eine: </div><br>
+  </header>
+  <nav class="nav nav-pills nav-justified">
+    <a class="nav-link" href="#">1</a>
+    <a class="nav-link" href="#">2</a>
+    <a class="nav-link" href="#">3</a>
+    <a class="nav-link" href="#">4</a>
+  </nav>
+  <main class="container">
+    <div class="row">
+      <form action="success.html" class="col">
+        <h2>Information</h2>
+        <div>Betreff:<br><input type="Subject" name="Subject"></div><br>
+        <div>Nachricht:<br><textarea name="body" cols="20" rows="5" wrap="virtual" maxlength="60"
+            placeholder="Maximal 60 Zeichen Text hier eingeben."></textarea></div>
+        <input type="hidden" name="type" value="info">
+        <input type="submit" value="Absenden">
+      </form>
+      <form action="success.html" class="col">
+        <h2>Beschwerde</h2>
+        <div>Betreff:<br><input type="Subject" name="Subject"></div><br>
+        <div>Nachricht:<br><textarea name="body" cols="20" rows="5" wrap="virtual" maxlength="60"
+            placeholder="Maximal 60 Zeichen Text hier eingeben."></textarea></div>
+        <input type="hidden" name="type" value="complaint">
+        <input type="submit" value="Absenden">
+      </form>
+    </div>
+  </main>
+  <footer>
+    <br><br>
+    <p>Franz Kafkas Verwaltung</p>
+  </footer>
+</body>
+
+</html>
