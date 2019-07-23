@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tag 7.</title>
+  <!--https://www.bootstrapcdn.com/-->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+
+<body>
+
+  <div class="container container--margin">
+    <div class="box box--margin">
+      <div class="box__inner">margin</div>
+    </div>
+  </div>
+
+  <div class="container container--padding">
+    <div class="box box--margin">
+      <div class="box__inner">padding</div>
+    </div>
+  </div>
+
+  <div class="container container--text-align">
+    <div class="box box--margin">
+      <div class="box__inner">text-align</div>
+    </div>
+  </div>
+
+  <div class="container container--absolute">
+    <div class="box box--margin">
+      <div class="box__inner">Lorem ipsum ipsum lorem</div>
+    </div>
+  </div>
+
+  <div class="container container--flex">
+    <div class="box box--margin">
+      <div class="box__inner">Flex: Lorem ipsum ipsum lorem</div>
+    </div>
+  </div>
+
+  <style>
+    .container {
+      border: 5px solid #cddc39;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .box {
+      background-color: gray;
+      color: whitesmoke;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container--margin .box {
+      margin: 0 auto;
+    }
+
+    .container--padding .box {
+      padding: 0% 50%;
+    }
+
+    .container--text-align {
+      text-align: center;
+    }
+
+    .container--text-align .box {
+      display: inline-block;
+    }
+
+    .container--absolute {
+      position: relative;
+      height: 100px;
+    }
+
+    .container--absolute .box {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .container--flex {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+
+</body>
+
+</html>
