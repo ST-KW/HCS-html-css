@@ -1,0 +1,51 @@
+<!--Navigation links Logo, dann navigation, ganz rechts share -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Popup</title>
+  <!--https://www.bootstrapcdn.com/-->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+  <style>
+    .header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      background-color: grey;
+      color: white;
+      display: flex;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="header__logo">
+      <img src="http://placekitten.com/g/200/50" alt="Logo">
+    </div>
+
+    <nav class="navigation">
+      <ul>
+        <li class="navigation__item"><a href="#">Startseite</a></li>
+        <li class="navigation__item"><a href="#">News</a></li>
+        <li class="navigation__item"><a href="#">Impressum</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__share">
+      <a href="#" aria-label="Diese Seite teilen"></a>
+      <img src="share.svg" width="30px" alt="share">
+    </div>
+
+  </header>
+
+</body>
+
+</html>

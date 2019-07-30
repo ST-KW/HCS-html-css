@@ -33,6 +33,7 @@
       schuf, das Wehen des Alliebenden, der uns in ewiger Wonne schwebend trägt und erhält; mein Freund! Wenn's dann um meine Augen dämmert, und die Welt um mich her und der Himmel ganz in meiner Seele ruhn wie die Gestalt einer Geliebten - dann
       sehne ich mich oft und denke : ach könntest du das wieder ausdrücken, könntest du dem Papiere das einhauchen, was so voll, so warm in dir lebt, daß es würde der Spiegel deiner Seele, wie deine Seele ist der Spiegel des unendlichen Gottes!</p>
     <div class="popup__cover" id="popup">
+      <a href="#" class="popup__close"></a>
       <div class="popup">
         <div class="popup__inner">
           <a href="#" class="close">&times;</a>
@@ -88,11 +89,23 @@
     }
 
     .popup {
+      position: relative;
       background-color: white;
       width: 800px;
       height: 600px;
       padding: 30px;
       border-radius: 10px;
+    }
+
+    .popup__close {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+
+
     }
 
     .popup__inner {
