@@ -9,7 +9,35 @@
   <!--https://www.bootstrapcdn.com/-->
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <link rel="stylesheet" type="text/css" href="skill-matrix.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+    /* Tooltip container */
+    .skill_matrix_tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Tooltip text */
+    .skill_matrix_tooltip .tooltiptext {
+      visibility: hidden;
+      width: 220px;
+      background-color: black;
+      color: #fff;
+      text-align: left;
+      padding: 5px 10px;
+      border-radius: 6px;
+
+      /* Position the skill_matrix_tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+    }
+
+    /* Show the skill_matrix_tooltip text when you mouse over the skill_matrix_tooltip container */
+    .skill_matrix_tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -27,7 +55,16 @@
           <span class="skill-matrix__skill__name">Fähigkeit</span>
           <div class="skill-matrix__skill__level-description">
             <span>Stufe</span>
-            <i class="fa fa-info-circle"></i>
+            <div class="skill_matrix_tooltip"><img src="info.svg" width="18px" alt="Info Skill Matrix">
+              <span class="tooltiptext">
+                0: Keine Fähigkeit<br>
+                1: Rookie<br>
+                2: Eigenverantwortlich<br>
+                3: State of the art<br>
+                4: Einzigartig
+              </span>
+            </div>
+
           </div>
           <div class="skill-matrix__skill__level">
             <span>0</span>

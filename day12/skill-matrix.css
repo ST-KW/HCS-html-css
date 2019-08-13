@@ -40,6 +40,11 @@
     padding-right: 2px;
 }
 
+.skill-matrix__skill__level-description > img {
+    margin-bottom: 3px;
+
+}
+
 .skill-matrix__skill--header {
     font-weight: bold;
     border: 1px solid #999;
@@ -54,14 +59,4 @@
     text-align: right;
     padding-right: 15px;
     min-width: 80px;
-}
-
-.info-icon {
-    border: 1px solid black;
-    padding: 0;
-    border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    text-align: center;
-}
+}  
