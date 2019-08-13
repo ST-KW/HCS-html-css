@@ -1,0 +1,114 @@
+<!--Navigation links Logo, dann navigation, ganz rechts share -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Matrix</title>
+  <!--https://www.bootstrapcdn.com/-->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="skill-matrix.css">
+
+  <style>
+    /* Tooltip container */
+    .skill_matrix_tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Tooltip text */
+    .skill_matrix_tooltip .tooltiptext {
+      visibility: hidden;
+      width: 220px;
+      background-color: black;
+      color: #fff;
+      text-align: left;
+      padding: 5px 10px;
+      border-radius: 6px;
+
+      /* Position the skill_matrix_tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+    }
+
+    /* Show the skill_matrix_tooltip text when you mouse over the skill_matrix_tooltip container */
+    .skill_matrix_tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="skill-matrix">
+
+      <div class="skill-matrix__header">
+        <span type="text" name="name" class="skill-matrix__header__name" contenteditable>Iron Man</span>
+        <span class="skill-matrix__header__team">(Avengers)</span>
+      </div>
+
+      <div class="skill-matrix__body">
+        <div class="skill-matrix__skill skill-matrix__skill--header">
+          <span class="skill-matrix__skill__name">Fähigkeit</span>
+          <div class="skill-matrix__skill__level-description">
+            <span>Stufe</span>
+            <div class="skill_matrix_tooltip"><img src="info.svg" width="18px" alt="Info Skill Matrix">
+              <span class="tooltiptext">
+                0: Keine Fähigkeit<br>
+                1: Rookie<br>
+                2: Eigenverantwortlich<br>
+                3: State of the art<br>
+                4: Einzigartig
+              </span>
+            </div>
+
+          </div>
+          <div class="skill-matrix__skill__level">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+          </div>
+        </div>
+        <div class="skill-matrix__skill">
+          <span class="skill-matrix__skill__name">Springen</span>
+          <div class="skill-matrix__skill__level">
+            <input type="radio" name="skill1" value="0" checked />
+            <input type="radio" name="skill1" value="1" />
+            <input type="radio" name="skill1" value="2" />
+            <input type="radio" name="skill1" value="3" />
+            <input type="radio" name="skill1" value="4" />
+          </div>
+        </div>
+        <div class="skill-matrix__skill">
+          <span class="skill-matrix__skill__name">Laufen</span>
+          <div class="skill-matrix__skill__level">
+            <input type="radio" name="skill2" value="0" checked />
+            <input type="radio" name="skill2" value="1" />
+            <input type="radio" name="skill2" value="2" />
+            <input type="radio" name="skill2" value="3" />
+            <input type="radio" name="skill2" value="4" />
+          </div>
+        </div>
+        <div class="skill-matrix__skill">
+          <span class="skill-matrix__skill__name">Fliegen</span>
+          <div class="skill-matrix__skill__level">
+            <input type="radio" name="skill3" value="0" checked />
+            <input type="radio" name="skill3" value="1" />
+            <input type="radio" name="skill3" value="2" />
+            <input type="radio" name="skill3" value="3" />
+            <input type="radio" name="skill3" value="4" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
