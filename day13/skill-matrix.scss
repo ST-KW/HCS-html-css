@@ -1,37 +1,38 @@
 
 .skill-matrix {
 
+  &__header {
+      padding: 15px 15px;
+
+      &__name {
+          font-size: 24px;
+      }
+
+      &__team {
+          font-size: 24px;
+      }
+  }
+
+  &__skill {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+  }
+
+  &__skill:nth-child(2n) {
+      background-color: #F0F0F0;
+  }
+
+  &__skill input[type="radio"] {
+      width: 20px;
+  }
+
+  &__skill__level {
+      min-width: 120px;
+  }
+
 }
 
-.skill-matrix__header {
-    padding: 15px 15px;
-}
-
-.skill-matrix__header__name {
-    font-size: 24px;
-}
-
-.skill-matrix__header__team {
-    font-size: 24px;
-}
-
-.skill-matrix__skill {
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-}
-
-.skill-matrix__skill:nth-child(2n) {
-    background-color: #F0F0F0;
-}
-
-.skill-matrix__skill input[type="radio"] {
-    width: 20px;
-}
-
-.skill-matrix__skill__level {
-    min-width: 120px;
-}
 
 .skill-matrix__skill--header .skill-matrix__skill__level > span {
     min-width: 20px;
@@ -59,4 +60,30 @@
     text-align: right;
     padding-right: 15px;
     min-width: 80px;
+}
+
+/* Tooltip container */
+.skill_matrix_tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.skill_matrix_tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  /* Position the skill_matrix_tooltip text */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the skill_matrix_tooltip text when you mouse over the skill_matrix_tooltip container */
+.skill_matrix_tooltip:hover .tooltiptext {
+  visibility: visible;
 }
